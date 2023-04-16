@@ -3,9 +3,11 @@ function renderLicenseSection(license) {
   if (license !== "None") {
     const licenseBadge = `![License](https://img.shields.io/badge/License-${license}-brightgreen.svg)`;
     const licenseNotice = `This application is covered under the ${license} license.`;
-    return `## License
-        ${licenseBadge}
-        ${licenseNotice}`;
+    return `
+## License
+${licenseBadge}
+${licenseNotice}
+`;
   }
   return "";
 }

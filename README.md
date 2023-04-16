@@ -4,6 +4,9 @@
 
 ## License
 
+![License](https://img.shields.io/badge/License)
+This application is covered under the MIT License.
+
 ## Table of Contents
 
 - [Installation](#installation)
