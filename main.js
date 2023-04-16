@@ -1,8 +1,9 @@
+const generateMarkdown = require("./markdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 // the array of questions is passed to the inquirer.prompt method
-inquirer.prompt([
+const questions = [
   {
     type: "input",
     name: "title",
@@ -54,17 +55,16 @@ inquirer.prompt([
     name: "email",
     message: "Please enter your email address.",
     validate: (value) => {
-      const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-      // returns true if valid email, else returns error message
+      const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value); // returns true if valid email, else returns error message
+
       return valid ? true : "Please enter a valid email address.";
     },
   },
   {
     type: "input",
     name: "github",
-    message: "Please enter your GitHub username.",
+    message: "Please enter your GitHub username.", // if the user doesn't enter a GitHub username, the prompt will repeat
     validate: (value) => {
-      // if the user doesn't enter a GitHub username, the prompt will repeat
       if (value.trim().length > 0) {
         return true;
       } else {
@@ -72,13 +72,14 @@ inquirer.prompt([
       }
     },
   },
-]);
+];
 
 // TODO: Create a function to write README file
 // the write file function takes two parameters: the file name and the data to write to the file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, date, (err) => {
+  fs.writeFile(fileName, data, (err) => {
     // if there's an error, log it, otherwise log a success message
+
     err
       ? console.error(err)
       : console.log("You've successfully created a README.md file");
@@ -86,7 +87,16 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+// the init function is called to initialize the app by calling the inquirer.prompt method
+function init() {
+  inquirer
+    .prompt(questions)
+    .then((data) => {
+      const markdownContent = generateMarkdown(data);
+      writeToFile("README.md", markdownContent);
+    })
+    .catch((err) => console.log(err));
+}
 
 // Function call to initialize app
 init();
