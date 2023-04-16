@@ -40,4 +40,4 @@
 ## Questions
 
     If you have any questions, please contact me at trentonponder2001@gmail.com.
-    You can find more of my work at [kviponder](https://github/com/kviponder).
+    You can find more of my work at [kviponder](https://github/com/Kviponder).
