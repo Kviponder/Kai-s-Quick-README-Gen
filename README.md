@@ -4,8 +4,8 @@
 
 ## License
 
-![License](https://img.shields.io/badge/License)
-This application is covered under the MIT License.
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+This application is covered under the MIT license.
 
 ## Table of Contents
 
@@ -14,6 +14,8 @@ This application is covered under the MIT License.
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Links](#links)
+- [Walkthrough-Video](#walkthrough-video)
 
 ## Installation
 
@@ -29,8 +31,7 @@ This application is covered under the MIT License.
 
 ## Contributing
 
-    Fork the repository.
-    Create a new branch with your changes using the command git checkout -b my-feature-branch.
+    Fork the repository. Create a new branch with your changes using the command git checkout -b my-feature-branch.
     Make your changes to the codebase.
     Push your changes to your forked repository using the command git push origin my-feature-branch.
     Create a pull request to the original repository.
@@ -43,4 +44,13 @@ This application is covered under the MIT License.
 ## Questions
 
     If you have any questions, please contact me at trentonponder2001@gmail.com.
-    You can find more of my work at [kviponder](https://github/com/Kviponder).
+    You can find more of my work at [Kviponder](https://github/com/Kviponder).
+
+- [Links](#links)
+- [Walkthrough-Video](#walkthrough-video)
+
+## Links
+    https://github.com/Kviponder/Kai-s-Quick-README-Gen
+
+## Walkthrough-Video
+

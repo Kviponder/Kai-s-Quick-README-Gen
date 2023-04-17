@@ -8,7 +8,7 @@ const questions = [
     type: "input",
     name: "title",
     message: "What is the title of your project?",
-    validate: (value) => {
+   validate: (value) => {
       if (value.trim().length > 0) {
         // if the user doesn't enter a title, the prompt will repeat
         return true;
@@ -31,11 +31,17 @@ const questions = [
     },
   },
   {
+    type: "list",
+    name: "license",
+    message: "Please select a license for your project.",
+    choices: ["MIT", "Apache", "GPL", "BSD", "None"],
+  },
+  {
     type: "input",
     name: "installation",
     message: "Please enter installation instructions for your project.",
   },
-  {
+ {
     type: "input",
     name: "usage",
     message: "Please enter usage information for your project.",
@@ -44,7 +50,8 @@ const questions = [
     type: "input",
     name: "contribution",
     message: "Please enter contribution guidelines for your project.",
-  },
+
+ },
   {
     type: "input",
     name: "test",
