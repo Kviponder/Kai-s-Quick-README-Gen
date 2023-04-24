@@ -22,41 +22,46 @@ const questions = [
     name: "description",
     message: "Please enter a description of your project.",
     validate: (value) => {
-      if (value.trim().length > 0) {
-        // if the user doesn't enter a description, the prompt will repeat
+      if (value.trim().length > 0) {  // if the user doesn't enter a description, the prompt will repeat
         return true;
       } else {
         return "Please enter a description for your project.";
       }
     },
   },
+  // the user is prompted to select a license for their project
   {
     type: "list",
     name: "license",
     message: "Please select a license for your project.",
     choices: ["MIT", "Apache", "GPL", "BSD", "None"],
   },
+  // the user is prompted to enter installation instructions for their project
   {
     type: "input",
     name: "installation",
     message: "Please enter installation instructions for your project.",
   },
+  // the user is prompted to enter usage information for their project
  {
     type: "input",
     name: "usage",
     message: "Please enter usage information for your project.",
   },
+  // the user is prompted to enter contribution guidelines for their project
   {
     type: "input",
     name: "contribution",
     message: "Please enter contribution guidelines for your project.",
 
  },
+ // the user is prompted to enter test instructions for their project
   {
     type: "input",
     name: "test",
     message: "Please enter test instructions for your project.",
   },
+  // the user is prompted to enter their  email address
   {
     type: "input",
     name: "email",
@@ -67,6 +72,7 @@ const questions = [
       return valid ? true : "Please enter a valid email address.";
     },
   },
+  // the user is prompted to enter their GitHub username
   {
     type: "input",
     name: "github",
@@ -95,6 +101,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 // the init function is called to initialize the app by calling the inquirer.prompt method
+// the inquirer.prompt method takes an array of questions as a parameter
 function init() {
   inquirer
     .prompt(questions)

@@ -46,14 +46,8 @@ This application is covered under the MIT license.
     If you have any questions, please contact me at trentonponder2001@gmail.com.
     You can find more of my work at [Kviponder](https://github/com/Kviponder).
 
-- [Links](#links)
-- [Walkthrough-Video](#walkthrough-video)
-
 ## Links
     https://github.com/Kviponder/Kai-s-Quick-README-Gen
 
 ## Walkthrough-Video
-<video width="auto" height="auto" controls>
-  <source src="./Video/KAisGenWalkthrough.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    https://drive.google.com/file/d/1aPTHctCTGYSbCjqcv2UWI2Pn2KpSv3tU/view?usp=sharing
